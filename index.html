@@ -36,24 +36,6 @@ fbq('track', 'PageView');
 </script>
 <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=244381526101799&ev=PageView&noscript=1" /></noscript>
 
-<!-- Default Statcounter code for Loyola Piano Event
-https://loyolapianoevent.com -->
-<script type="text/javascript">
-var sc_project=13227216; 
-var sc_invisible=1; 
-var sc_security="08406ec2"; 
-</script>
-<script type="text/javascript"
-src="https://www.statcounter.com/counter/counter.js"
-async></script>
-<noscript><div class="statcounter"><a title="Web Analytics"
-href="https://statcounter.com/" target="_blank"><img
-class="statcounter"
-src="https://c.statcounter.com/13227216/0/08406ec2/1/"
-alt="Web Analytics"
-referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
-<!-- End of Statcounter Code -->
-  
 <style>
 :root {
   --cream: #FAF7F2;
@@ -338,6 +320,58 @@ h1.hero-title em {
   text-transform: uppercase;
   color: var(--muted);
   font-weight: 500;
+}
+
+.feature-banner {
+  background: var(--paper);
+  padding: 60px 48px;
+  text-align: center;
+}
+.feature-banner-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.feature-banner img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow-md);
+}
+.feature-banner-caption {
+  margin-top: 20px;
+  font-size: 11px;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--gold-dark);
+  font-weight: 500;
+}
+
+.financing-banner {
+  background: var(--cream);
+  padding: 60px 48px;
+}
+.financing-banner-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+.financing-banner img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow-md);
+}
+.financing-banner-note {
+  margin-top: 24px;
+  font-size: 13px;
+  color: var(--muted);
+  font-style: italic;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.6;
 }
 
 .host {
@@ -916,6 +950,7 @@ h1.hero-title em {
   .nav { padding: 14px 24px; }
   .hero { padding: 70px 24px 60px; }
   .host, .ways, .gallery, .inventory, .letter, .location, .booking { padding: 70px 24px; }
+  .feature-banner, .financing-banner { padding: 40px 24px; }
   .host-inner, .letter-inner { padding: 36px 28px; }
   .way-card { padding: 36px 28px; }
   .countdown-grid { gap: 12px; }
@@ -992,6 +1027,13 @@ h1.hero-title em {
         </div>
       </div>
     </div>
+  </div>
+</section>
+
+<section class="feature-banner">
+  <div class="feature-banner-inner">
+    <img src="./loyola-banner.png" alt="Loyola Marymount University Pianos Offered To The Public" loading="lazy" />
+    <div class="feature-banner-caption">Pianos Offered to the Public</div>
   </div>
 </section>
 
@@ -1127,6 +1169,13 @@ h1.hero-title em {
       <span>Disklavier</span>
       <span>Clavinova</span>
     </div>
+  </div>
+</section>
+
+<section class="financing-banner">
+  <div class="financing-banner-inner">
+    <img src="./financing-banner.png" alt="0% APR for 24 Months Same As Cash financing available on select pianos" loading="lazy" />
+    <p class="financing-banner-note">Financing subject to credit approval. See store for full terms and details.</p>
   </div>
 </section>
 
