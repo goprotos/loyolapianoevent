@@ -322,6 +322,50 @@ h1.hero-title em {
   font-weight: 500;
 }
 
+.video-section {
+  background: var(--paper);
+  padding: 60px 48px 40px;
+}
+.video-inner {
+  max-width: 420px;
+  margin: 0 auto;
+  text-align: center;
+}
+.video-eyebrow {
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 16px;
+}
+.video-wrapper {
+  position: relative;
+  width: 100%;
+  padding-bottom: 177.77%; /* 9:16 aspect ratio for vertical video */
+  height: 0;
+  overflow: hidden;
+  background: var(--charcoal);
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow-lg);
+}
+.video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+.video-caption {
+  margin-top: 16px;
+  font-size: 12px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--muted);
+  font-weight: 500;
+}
+
 .feature-banner {
   background: var(--paper);
   padding: 60px 48px;
@@ -951,6 +995,8 @@ h1.hero-title em {
   .hero { padding: 70px 24px 60px; }
   .host, .ways, .gallery, .inventory, .letter, .location, .booking { padding: 70px 24px; }
   .feature-banner, .financing-banner { padding: 40px 24px; }
+  .video-section { padding: 40px 24px; }
+  .video-inner { max-width: 340px; }
   .host-inner, .letter-inner { padding: 36px 28px; }
   .way-card { padding: 36px 28px; }
   .countdown-grid { gap: 12px; }
@@ -990,6 +1036,23 @@ h1.hero-title em {
     <a href="#booking" class="nav-cta">Book Appointment</a>
   </div>
 </nav>
+
+<section class="video-section">
+  <div class="video-inner">
+    <div class="video-eyebrow">Watch the Announcement</div>
+    <div class="video-wrapper">
+      <iframe
+        src="https://www.youtube.com/embed/gDsZwUWwpQA"
+        title="The Loyola Marymount Piano Event"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen>
+      </iframe>
+    </div>
+    <div class="video-caption">The 2026 Piano Event</div>
+  </div>
+</section>
 
 <section class="hero">
   <div class="hero-inner">
